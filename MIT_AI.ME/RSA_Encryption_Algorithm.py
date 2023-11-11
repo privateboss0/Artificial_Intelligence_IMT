@@ -85,7 +85,7 @@ try:
 except:
     modulusSize = 2048
 
-msg = str(input('Type your secure message and press Enter: '))
+msg = (input('Type your secure message and press Enter: '))
 
 primeSize = modulusSize // 2
 p = getSecretsPrime(primeSize)
