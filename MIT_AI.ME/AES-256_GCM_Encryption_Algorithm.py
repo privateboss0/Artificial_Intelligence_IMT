@@ -1,5 +1,5 @@
 """This algorithm encrypts, decrypts and verifies the integrity of any message using AES-256-GCM (Symmetric encryption)
- to ensure confidentiality and authenticity of the information except with verified identities with shared/secret key"""
+ to ensure confidentiality and authenticity of the information with verified identities that pocesses the shared/secret key"""
 
 import base64
 import hashlib
