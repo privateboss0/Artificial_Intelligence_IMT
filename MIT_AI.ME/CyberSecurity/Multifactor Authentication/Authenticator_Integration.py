@@ -2,7 +2,9 @@ import time
 import pyotp
 import qrcode
 
-secretkey = "PublicPrivate"
+secretkey = "3Private6Public7" 
+#secretkey = pyotp.random_base32() Either use a static key or random key, both kept by the service provider.
+#but the program works inversely with the recovery code app secretkey set to static, while MFA and Integration app secretkey in random.
 
 Uniform_Resource_Identifier = pyotp.totp.TOTP(secretkey).provisioning_uri(name="Aola", issuer_name= "Privateboss_App")
 
