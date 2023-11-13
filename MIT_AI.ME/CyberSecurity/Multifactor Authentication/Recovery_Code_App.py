@@ -1,8 +1,9 @@
 import time
 import pyotp
 
-secretkey = "PublicPrivate"
-# Either selecting line 4 or using a random key kept by service provider: skey = pyotp.random_base32()
+secretkey = "3Private6Public7" 
+#secretkey = pyotp.random_base32() Either use a static key or random key, both kept by the service provider.
+#but the program works inversely with the recovery code app set to static, while MFA na d Integration app in random.
 
 counter = 0
 
