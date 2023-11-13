@@ -2,7 +2,7 @@ import time
 import pyotp
 import qrcode
 
-secretkey = "PrivatePublic1679@#"
+secretkey = "PublicPrivate"
 
 counter = 0
 
@@ -10,7 +10,7 @@ dotp = pyotp.TOTP(secretkey)
 
 while True:
   
-  dotp_code = input("Enter the OTP from your Google Authenticator App: ")
+  dotp_code = input("Enter the OTP from your Google/Microsoft Authenticator App: ")
 
   if dotp.verify(dotp_code):
 
@@ -39,7 +39,7 @@ while True:
       # Verify the recovery code.
       R_codes = pyotp.HOTP(secretkey)
       if R_codes.verify(recovery_code):
-        
+    
         counter = 0
 
         print("Authentication successful!")
