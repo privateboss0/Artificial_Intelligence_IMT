@@ -83,7 +83,7 @@ try:
     modulusSize = int(sys.argv[1])
         
 except:
-    modulusSize = 2048
+    modulusSize = 2048  #4096 modulus size was used too but message encryption and decryption was about 9minutes due to local computational resources
 
 msg = (input('Type your secure message and press Enter: '))
 
