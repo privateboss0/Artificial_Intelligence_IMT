@@ -4,7 +4,7 @@ import qrcode
 
 secretkey = "3Private6Public7" 
 #secretkey = pyotp.random_base32() Either use a static key or random key, both kept by the service provider.
-#but the program works inversely with the recovery code app set to static, while MFA na d Integration app in random.
+#but the program works inversely with the recovery code app secretkey set to static, while MFA and Integration app secretkey in random.
 
 counter = 0
 
