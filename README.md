@@ -13,7 +13,6 @@ ________________________________________________________________________________
 
                               BUILT A 2FA/MFA (TOTP) and (HOTP) APPLICATION WITH A SECURE PASSWORD GENERATOR
 
-Associated with privateboss.caAssociated with privateboss.ca
 A SaaS based multifactor authenticator TOTP(Time Based One Time Password) app was created using Python3.x programming language to verify users identity to an application(Privateboss_App) given integration with (Microsoft/Google) authenticator applications and QRcode download was enabled for initial identity verification.
 
 Offline/Recovery code application was created to ensure users can still login into the application if there is no internet service or after 5 failed attempt with authenticator's One Time Password using HOTP (HMAC One Time Password)
