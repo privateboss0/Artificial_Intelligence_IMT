@@ -1,6 +1,6 @@
 # Artificial_Intelligence_MIT
 
-                                                            CRYPTOGRAPHIC ALGORITHMS
+                                                      CRYPTOGRAPHIC ALGORITHMS
 
 MIT 6.034 Artificial Intelligence Projects
 
@@ -11,7 +11,7 @@ The project is an extension of my Network Security and Advanced Network Security
 This was written in Python 3.xx programming language for the AI course project.
 ______________________________________________________________________________________________________________________________________________________
 
-                              BUILT A 2FA/MFA (TOTP) and (HOTP) APPLICATION WITH A SECURE PASSWORD GENERATOR
+                          BUILT A 2FA/MFA (TOTP) and (HOTP) APPLICATION WITH A SECURE PASSWORD GENERATOR
 
 A SaaS based multifactor authenticator TOTP(Time Based One Time Password) app was created using Python3.x programming language to verify users identity to an application(Privateboss_App) given integration with (Microsoft/Google) authenticator applications and QRcode download was enabled for initial identity verification.
 
