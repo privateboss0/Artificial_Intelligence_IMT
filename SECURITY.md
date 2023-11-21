@@ -3,7 +3,7 @@
 ## Supported Versions of OS is included below. some portion of the code might need to be adjusted to accomodate non-supported versions. Codes were
 ##   written only in python 3.xx.
 
-# The projects are worked on and published as required. using the latest cybersecurity protocol of 2023
+# The projects are worked on and published as required. using the latest cryptographic algorithms of 2023
 
 | Version              | Supported          |
 | -------              | ------------------ |
