@@ -3,7 +3,7 @@
 # The program will then generate a public and private key pair. The public
 # key will be used to encrypt the message, and the private key will be used
 # to decrypt it. Once the message is encrypted, you can share it with anyone.
-# To decrypt the message, the receiver will need to have the private key.
+# To decrypt the message, the receiver will need to have the private key...
 
 import math
 from math import gcd
