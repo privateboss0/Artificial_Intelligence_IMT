@@ -20,8 +20,8 @@ while True:
   try:
     length = int(input('Enter the length of your password in numbers: '))
 
-    if length <= 15:
-      raise ValueError('Password length must be greater than fifteen')
+    if length <= 14:
+      raise ValueError('Password length must be equal or greater than fifteen')
 
     if length > MAX_PASSWORD_LENGTH:
       raise ValueError('Password length must be less than {}'.format(MAX_PASSWORD_LENGTH))
