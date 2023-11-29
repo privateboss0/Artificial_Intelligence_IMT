@@ -26,7 +26,7 @@ def primitive_check(g, p):
 #1024 prime bits is good, 2048 is better, 4096 is best excluding quantum computational power maturity."""
 
 while True:
-    P = secrets.randbelow(7000)  
+    P = secrets.randbelow(4096)  
     if prime_checker(P) == -1:
         continue
     break
