@@ -44,7 +44,7 @@ hash_digest01 = sha512(encoded_message)
 hash_digest06 = sha3_384(encoded_message)
 hash_digest07 = sha3_512(encoded_message)
 
-print(f'The SHA512 hash of your message is:\n{hash_digest01}')
+print(f'\nThe SHA512 hash of your message is:\n{hash_digest01}')
 print(f'\nThe SHA3-384 hash of your message is:\n{hash_digest06}')
 print(f'\nThe SHA3-512 hash of your message is:\n{hash_digest07}')
 blake3_hash(message)
