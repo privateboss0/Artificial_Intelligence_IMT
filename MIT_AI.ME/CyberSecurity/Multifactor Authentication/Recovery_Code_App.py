@@ -5,6 +5,16 @@ secretkey = "4Private6Public7"
 
 counter = 0
 max_attempt = 10
+used_codes = []
+
+file_path = "used_codes.txt"  # Path to the file storing used codes
+
+# Load used codes from file if it exists but no database currently
+try:
+    with open(file_path, "r") as f:
+        used_codes = f.read().splitlines()
+except FileNotFoundError:
+    pass
 
 #Recovery codes are typically emailed to the end user OOB(Out of Band)
 recovery_codes = pyotp.HOTP(secretkey)
@@ -26,13 +36,17 @@ while True:
     code = input("Enter your Recovery Code please: ")
 
     if recovery_codes.verify(code, counter):
-        counter = 0
-        print("You have sucessfully logged in with Recovery Codes!")
+        if code in used_codes:
+            print("Recovery code has already been used. Please enter a different code.")
+        else:
+            counter = 0
+            print("You have sucessfully logged in with Recovery Codes!")
 
-        # Make the API call.
-        # TODOLIST: Implement your API call here into your application.
+            # Make the API call.
+            # TODOLIST: Implement your API call here into your application.
 
-        break
+            used_codes.append(code)  # Mark the code as used
+            break
 
     else:
         counter += 1
