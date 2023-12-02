@@ -45,7 +45,10 @@ while True:
             # Make the API call.
             # TODOLIST: Implement your API call here into your application.
 
-            used_codes.append(code)  # Mark the code as used
+            used_codes.append(code)  # Mark the code as used and write to database
+
+            with open(file_path, "w") as f:
+                f.write("\n".join(used_codes))
             break
 
     else:
