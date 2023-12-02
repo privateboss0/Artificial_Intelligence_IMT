@@ -7,6 +7,8 @@ secretkey = "3Private6Public7"
 #but the program works inversely with the recovery code app secretkey set to static, while MFA and Integration app secretkey in random.
 
 Uniform_Resource_Identifier = pyotp.totp.TOTP(secretkey).provisioning_uri(name="Aola", issuer_name= "Privateboss_App")
+# Input an authentication service provider/oauth uri. I used an abituary app for testing purposes.
+# https://github.com/google/google-authenticator/wiki/Key-Uri-Format
 
 print(Uniform_Resource_Identifier)
 
