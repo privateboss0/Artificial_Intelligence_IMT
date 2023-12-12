@@ -18,3 +18,5 @@ A SaaS based multifactor authenticator TOTP(Time Based One Time Password) app wa
 Offline/Recovery code application was created to ensure users can still login into the application if there is no internet service or after 5 failed attempt with authenticator's One Time Password using HOTP (HMAC One Time Password)
 
 A Secure Password Generator was also built to offer great password security. While I strongly advocate for SSO(Single Sign On) with 2FA/MFA as part of a strong identity solution, a secure random password with a minimum of 15 strings is a better alternative to reusing passwords on multiple platforms. 
+
+This was written in Python 3.xx programming language for the AI course project.
