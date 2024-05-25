@@ -17,7 +17,6 @@ except subprocess.CalledProcessError:
     print('[!] pip3 installed succesfully')
 
 
-
 try:
 
     import requests
@@ -59,7 +58,7 @@ def tor_ip():
         print(f"Error: {e}")
         return None
 
-def change():
+def tor_ip_changer():
     os.system("service tor reload")
     tor_ip_text = tor_ip()
     if tor_ip_text:
@@ -95,7 +94,7 @@ if int(lin) ==int(0):
         while True:
                 try:
                         time.sleep(int(x))
-                        change()
+                        tor_ip_changer()
                 except KeyboardInterrupt:
 
                         print('\nauto tor is closed ')
@@ -104,4 +103,4 @@ if int(lin) ==int(0):
 else:
         for i in range(int(lin)):
                     time.sleep(int(x))
-                    change()
+                    tor_ip_changer()
