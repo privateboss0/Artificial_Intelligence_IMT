@@ -20,3 +20,12 @@ Offline/Recovery code application was created to ensure users can still login in
 A Secure Password Generator was also built to offer great password security. While I strongly advocate for SSO(Single Sign On) with 2FA/MFA as part of a strong identity solution, a secure random password with a minimum of 15 strings is a better alternative to reusing passwords on multiple platforms. 
 
 This was written in Python 3.xx programming language for the AI course project.
+______________________________________________________________________________________________________________________________________________________
+
+                         SECURE Auto_Tor_IP Changer 
+
+A secured auto_tor_ip_changer was made to guarantee privacy and secure access the onion network/dark web using firefox browser. This can be used in conjuction with the tor_browser only by simply removing the "response = requests.get(url,proxies=dict(https='socks5://127.0.0.1:9050'))" and replacing it with "response = requests.get(url)". Packages have to be installed before the libaries in the python environment work
+
+The program allows tor network users to continually change their tor IP address every 67 seconds using secure protocols only and queries https://check.torproject.org for ip updates.
+
+This project was written in Python 3.xx programming language for the AI course project.
