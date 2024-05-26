@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #This is built on top of the Tor network to allow
-#for a secure, and random allocation of tor ip address to facilitate 
-#an anonymous browsing experience on the internet from the network level
+#for a private, secure, and continous random allocation of tor ip addresses to 
+#facilitate an anonymous browsing experience on the internet from the network level
 
 import time
 import os
