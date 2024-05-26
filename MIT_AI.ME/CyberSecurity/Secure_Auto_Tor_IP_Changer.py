@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#This is built on top of the Tor network to allow
+#for a secure, and random allocation of tor ip address to facilitate 
+#an anonymous browsing experience on the internet from the network level
 
 import time
 import os
@@ -15,7 +18,6 @@ except subprocess.CalledProcessError:
     subprocess.check_output('sudo apt update',shell=True)
     subprocess.check_output('sudo apt install python3-pip -y', shell=True)
     print('[!] pip3 installed succesfully')
-
 
 try:
 
@@ -77,12 +79,10 @@ print('''\033[1;32;31m \n
                 V 7.6
 from Nero
 ''')
+
 print("\033[1;40;34m https://github.com/privateboss0/\n")
 
 os.system("service tor start")
-
-
-
 
 time.sleep(3)
 print("\033[0;32;32m change the proxy socks5 in your browser to 127.0.0.1:9050 \n")
